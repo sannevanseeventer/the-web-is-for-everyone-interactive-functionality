@@ -1,6 +1,6 @@
 import express from 'express'
 import indexRoute from './routes/index.js'
-import memberRoute from './routes/member.js'
+import memberRoute from './routes/notes.js'
 
 // Maak een nieuwe express app
 const server = express()
@@ -21,7 +21,7 @@ server.use(express.urlencoded({ extended: true }))
 
 // Stel de routes in
 server.use('/', indexRoute)
-server.use('/member', memberRoute)
+server.use('/notities', memberRoute)
 
 // Start met luisteren
 server.listen(server.get('port'), () => {

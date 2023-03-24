@@ -1,25 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OMG!</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+<html lang="nl">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vini Mini overzichtspagina</title>
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="/style/style.css">
+
+  <!--=============== ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--YELLOW BANNER-->
   <header>
-    <h1>FDND Squads</h1>
+    <p>GEEN VERZENDKOSTEN bij aankoop van mijn eerste pinda in 3 of 6 stappen + mijn eerste pinda Opvolgkit</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="/?squad=squad-a-2022">Squad A</a></li>
-      <li><a href="/?squad=squad-b-2022">Squad B</a></li>
-      <li><a href="/?squad=squat-c-2022">Squat C</a></li>
-    </ul>
-  </nav>
+  <!--NAV -->
+  <nav class="nav-container">
 
+    <div class="icons-left">
+      <i class="ri-shopping-cart-2-line"></i>
+
+      <i class="ri-user-line"></i>
+    </div>
+
+    <a href="/" class="nav-logo"><img class="logo" src="/img/logo.png" alt="logo"></a>
+
+
+    <div class="nav-menu" id="nav-menu">
+      <i class="ri-close-line nav-close" id="nav-close"></i>
+      <ul class="nav-list">
+
+        <li class="nav-item">
+          <a href="/producten" class="nav-link">Producten</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/detail/?detailSlug=stappenplan" class="nav-link">Stappenplan</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/over" class="nav-link">Over</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/detail/?detailSlug=nieuws" class="nav-link">Nieuws</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/contact" class="nav-link">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/test" class="nav-link">Doe de test</a>
+        </li>
+      </ul>
+
+      <div class="icons-right">
+        <i class="ri-shopping-cart-2-line"></i>
+
+        <i class="ri-user-line"></i>
+      </div>
+    </div>
+
+    <div class="nav-toggle" id="nav-toggle">
+      <i class="ri-menu-fill"></i>
+    </div>
+  </nav>
+  </div>
   <main>
-  

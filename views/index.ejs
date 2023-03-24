@@ -1,29 +1,31 @@
 <%- include('./partials/head.ejs') %>
 
   <h1>
-    <%= squad.name %>
-  </h1>
+    Notities </h1>
+  <p>Startpagina / Producten / Mijn eerste pinda in 3 stappen</p>
 
-  <% squad.members.forEach(member=> { %>
+
+
+  <% notities.forEach(notitie=> { %>
 
     <article>
       <h2>
-        <%= member.name %>
-          <%= member.prefix %>
-            <%= member.surname %>
+        <%= notities.titel %>
+          <%= notities.datum %>
+            <%= notities.beschrijving %>
       </h2>
-      <img src="<%= member.avatar != '' ? member.avatar :'/placeholder.jpg' %>"
-        alt="De avatar van <%= member.name %>" />
-      <a href="/member/?id=<%= member.id %>"></a>
+      <a href="/notities/new"></a>
     </article>
 
     <% }) %>
 
 
       <article>
-        <h2>Jouw kaartje hier?</h2>
-        <img src="/placeholder.jpg" alt="Jouw avatar hier?" />
-        <a href="/member/new?squad=<%= squad.id %>&"></a>
+        <div class="note-data">
+          <i class="ri-add-line plus"></i>
+          <h2>Maak een notitie</h2>
+          <a href="/notities/new"></a>
+        </div>
       </article>
 
       <%- include('./partials/foot.ejs') %>
