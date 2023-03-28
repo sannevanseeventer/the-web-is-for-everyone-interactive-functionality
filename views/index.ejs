@@ -1,31 +1,119 @@
 <%- include('./partials/head.ejs') %>
 
-  <h1>
-    Notities </h1>
-  <p>Startpagina / Producten / Mijn eerste pinda in 3 stappen</p>
+    <%- include('./partials/nav.ejs') %>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="text-container">
+                <h2 class="hero-title">Verklein de kans op een pinda-allergie bij jouw Mini</h2>
+                <p class="hero-text">Beantwoord
+                    een paar simpele vragen voor het advies en schema voor jouw Mini (ontwikkeld in samenwerking met
+                    kinderarts-allergoloog en conform richtlijnen DAVO-diëtisten)</p>
+
+                <button class="hero-button"> Doe de test </button>
+            </div>
+
+            <div>
+                <img src="/img/afb1.png" alt="Vini mini sfeerfoto" class="hero-picture">
+            </div>
+        </section>
+
+
+        <!-- SECTION 2 -->
+        <section class="steps">
+            <div class="steps-container">
+                <h2 class="steps-title">Mijn eerste pinda in 3 of 6 stappen<h2>
+                        <p class="steps-text">Gebaseerd op wetenschappelijk onderzoek ontwikkelden we mijn eerste pinda
+                            in 3 en 6 stappen. Deze producten bevatten de juiste dosering pindameel om voor het eerst
+                            pinda te geven aan je baby. Zo kun je veilig per stap bekijken hoe jouw Mini reageert op het
+                            eten van pinda's.</p>
+
+                        <button class="steps-button"> Onze producten </button>
+            </div>
+
+            <img src="/img/IMG_5265.jpg" alt="Vini mini sfeerfoto product" class="steps-picture">
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="kit">
+            <div class="kit-container">
+                <h2 class="kit-title">Mijn eerste pinda Opvolgkit<h2>
+                        <p class="kit-text">Als jouw Mini onze mijn eerste pinda in 3 of 6 stappen probleemloos
+                            doorlopen
+                            heeft, is het belangrijk dat om wekelijks pinda's te blijven geven. Hiervoor kun je onze
+                            mijn
+                            eerste pinda Opvolgkit gebruiken.
+                        </p>
+
+                        <button class="opvolgkit-button"> Meer informatie </button>
+            </div>
+
+            <img src="/img/IMG_5266.jpg" alt="Vini mini sfeerfoto product" class="steps-picture">
+        </section>
+
+        <!-- SECTION 4 -->
+
+        <section class="cards">
+
+            <div class="cards-wrapper">
+                <div class="card">
+                    <!-- <i class="ri-questionnaire-line card-icon"></i> -->
+                    <h2 class="card-title">Waarom pinda & ei geven aan je Mini?</h2>
+                    <p class="card-text">Het aantal kinderen met voedselallergie is de afgelopen 10 jaar verdubbeld.
+                        Wetenschappelijk onderzoek toont aan dat je de kans op een pinda- en ei-allergie vermindert
+                        door deze vroeg en vaak te geven aan een Mini.</p>
+
+                    <button class="card-button"> Veelgestelde vragen </button>
+                </div>
+
+                <div class="card">
+                    <!-- <i class="ri-calendar-2-line card-icon"></i> -->
+                    <h2 class="card-title">Wanneer pinda & ei geven aan je Mini?</h2>
+                    <p class="card-text">Om de kans op voedselallergie bij je Mini te verkleinen is het advies van
+                        zorgprofessionals: start met het geven vóór de leeftijd van 6 òf 8 maanden. Voor elke Mini
+                        kan de start en hoeveelheid anders zijn. Doe hiervoor onze test.</p>
+
+                    <button class="card-button"> Doe de test </button>
+                </div>
+
+                <div class="card">
+                    <!-- <i class="ri-list-check card-icon"></i> -->
+                    <h2 class="card-title">Hoe pinda & ei geven aan je Mini?</h2>
+                    <p class="card-text">Zodra je Mini gewend is aan de eerste hapjes, kun je starten met pinda en
+                        ei. Gebruik voor de eerste keer een schema en blijf vervolgens wekelijks pinda en ei geven.
+                        Je kunt hiervoor pindakaas, gekookt ei of onze producten gebruiken.</p>
+
+                    <button class="card-button"> Bekijk schema </button>
+                </div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <section class="over">
+
+                <img src="/img/over.png" alt="Vini mini sfeerfoto product" class="over-picture">
+
+                <div class="over-container">
+                    <h2 class="over-title">Over ons<h2>
+                            <p class="over-text">Onze wereld veranderde toen we moeder werden; helemaal toen het zoontje
+                                van Laurie een ernstige allergische reactie kreeg toen hij 6 maanden oud was. Gelukkig
+                                kon door het vroeg en vaak geven van pinda's en noten bij hem een pinda- en
+                                notenallergie worden voorkomen.
+
+                                Hieruit werd Vini Mini geboren, omdat wij vinden dat iedere Mini recht heeft op een
+                                gezond, gelukkig en zorgeloos leven!</p>
+
+                            <button class="over-button"> Bekijk ons team </button>
+                </div>
 
 
 
-  <% notities.forEach(notitie=> { %>
-
-    <article>
-      <h2>
-        <%= notities.titel %>
-          <%= notities.datum %>
-            <%= notities.beschrijving %>
-      </h2>
-      <a href="/notities/new"></a>
-    </article>
-
-    <% }) %>
+            </section>
 
 
-      <article>
-        <div class="note-data">
-          <i class="ri-add-line plus"></i>
-          <h2>Maak een notitie</h2>
-          <a href="/notities/new"></a>
-        </div>
-      </article>
 
-      <%- include('./partials/foot.ejs') %>
+
+
+
+
+            <%- include('./partials/foot.ejs') %>

@@ -1,0 +1,47 @@
+<%- include('./partials/head.ejs') %>
+
+    <div class="login">
+
+        <img src="/img/IMG_5265_2.png" alt="login" class="login-img">
+
+        <div class="back-container">
+            <i class="ri-arrow-left-line back"></i>
+            <h2 class="back-to"><a href="/">Terug naar de website</a></h2>
+        </div>
+
+        <form action="" class="login-form">
+            <h2 class="login-title">Inloggen</h2>
+
+            <div class="login-content">
+                <div class="login-box">
+                    <i class="ri-user-line login-icon"></i>
+
+                    <div class="login-box__input">
+                        <input type="email" required class="login-input" placeholder=" ">
+                        <label for="" class="login-label">Emailadres</label>
+                    </div>
+                </div>
+
+                <div class="login-box">
+                    <i class="ri-lock-2-line login-icon"></i>
+                    <div class="login-box__input">
+                        <input type="password" required class="login-input" id="login-pass" placeholder=" ">
+                        <label for="" class="login-label">Wachtwoord</label>
+                        <i class="ri-eye-off-line login-eye" id="login-eye"></i>
+                    </div>
+                </div>
+
+                <div class="login-check">
+                    <div class="login-check__group">
+                        <input type="checkbox" class="login-check__input">
+                        <label for="" class="login-check__label">Onthoud mij</label>
+                    </div>
+                    <a href="" class="login-forgot">Wachtwoord vergeten?</a>
+                </div>
+
+                <a href="/personal" class="login-button">Login</a>
+
+                <p class="login-register">Nog geen account? <a href="#">Registreer</a>
+                </p>
+        </form>
+    </div>

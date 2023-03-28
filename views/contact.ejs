@@ -1,0 +1,34 @@
+<%- include('./partials/head.ejs') %>
+
+    <%- include('./partials/nav.ejs') %>
+
+
+        <h1>
+            Notities </h1>
+        <p>Startpagina / Producten / Mijn eerste pinda in 3 stappen</p>
+
+
+
+        <% notities.forEach(notitie=> { %>
+
+            <article>
+                <h2>
+                    <%= notities.titel %>
+                        <%= notities.datum %>
+                            <%= notities.beschrijving %>
+                </h2>
+                <a href="/notities/new"></a>
+            </article>
+
+            <% }) %>
+
+
+                <article>
+                    <div class="note-data">
+                        <i class="ri-add-line plus"></i>
+                        <h2>Maak een notitie</h2>
+                        <a href="/notities/new"></a>
+                    </div>
+                </article>
+
+                <%- include('./partials/foot.ejs') %>

@@ -1,0 +1,47 @@
+<!-- voegt de head section toe aan deze pagina-->
+<%- include('./partials/head.ejs') %>
+
+    <!-- voegt de nav toe aan deze pagina-->
+    <%- include('./partials/nav.ejs') %>
+
+        <h2 class="section-title">Producten</h2>
+        <a href="#" class="section-all">Startpagina / Producten</a>
+
+        <section class="product section" id="products">
+            <!-- Geldt voor alle producten van Vini Mini -->
+            <% producten.forEach(product=> { %>
+                <% console.log(product) %>
+
+                    <div class="product-container bd-grid">
+                        <div class="product">
+                            <!-- deze linkt naar de detailpagina van een product -->
+                            <a href="/product?detailId=<%= product.id %>">
+                            </a>
+                            <div class="product-box">
+                            </div>
+                            <!-- dit zorgt ervoor dat je plaatjes uit de database krijgt, ook als er geen plaatje is ingevoerd -->
+                            <% if(product.plaatjes.length) { %>
+                                <a href="/product?detailId=<%= product.id %>"><img src="<%= product.plaatjes[0].url %>"
+                                        alt="plaatje" class="plaat" /></a>
+                                <!-- Als er bij een product geen url naar een plaatje is, laat dan deze placeholder image zien-->
+                                <% }else{ %>
+                                    <a href="/product?detailId=<%= product.id %>"><img src="/img/placeholder.png"
+                                            alt="Placeholder pinda" class="plaat" /></a>
+                                    <% } %>
+
+                                        <div class="product-data">
+                                            <h3 class="product-name">
+                                                <!-- laat de product titel zien op de pagina-->
+                                                <%= product.titel %>
+                                            </h3>
+                                            <span class="product-price">
+                                                <!-- laat de prijs zien op de pagina-->
+                                                € <%= product.prijs %>
+                                            </span>
+                                        </div>
+                        </div>
+                    </div>
+                    <% }) %>
+        </section>
+        <!-- voegt de footer section toe aan deze pagina-->
+        <%- include('./partials/foot.ejs') %>
