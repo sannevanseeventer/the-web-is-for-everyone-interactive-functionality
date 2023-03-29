@@ -1,5 +1,7 @@
 /*========== GOOGLE FONTS ==========*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
 
 /*========== VARIABLES CSS ==========*/
 :root {
@@ -20,7 +22,7 @@
     --bg: #fafafa;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
     --normal-font-size: .938rem;
     --small-font-size: .75rem;
     --smaller-font-size: .75rem;
@@ -269,6 +271,51 @@ img {
     color: var(--green);
 }
 
+
+/* NOTES */
+
+
+article {
+    position: relative;
+    transition: 0.5s;
+    flex-flow: row nowrap;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background: var(--color-green);
+}
+
+.note-data {
+    padding-top: 4.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plus {
+    text-align: center;
+    color: var(--green);
+    font-size: 3em;
+    border: 1px dashed var(--green);
+    border-radius: 50%;
+    margin-bottom: 0.3em;
+
+}
+
+article:last-of-type {
+    background: white;
+    box-shadow: 2px 2px 2px rgba(174, 190, 205, .3);
+}
+
+
+
+
+
+
+
+
+
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 @media screen and (max-width: 320px) {
@@ -332,6 +379,7 @@ img {
         opacity: 0;
         transition: .3s;
     }
+
 
 
     /* Navbar expanded */

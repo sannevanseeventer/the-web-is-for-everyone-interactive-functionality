@@ -1,0 +1,55 @@
+<%- include('./partials/head2.ejs') %>
+
+    <%- include('./partials/nav2.ejs') %>
+
+        <h3>Notities</h3>
+
+
+
+        <!-- <article class="">
+            <div class="note-data">
+                <i class="ri-add-line plus"></i>
+                <h2>Maak een notitie</h2>
+                <a href="/notities/new"></a>
+            </div>
+        </article> -->
+
+        <form action="/newnote" method="post">
+            <fieldset>
+                <legend>notities</legend>
+
+                <!-- notitietest -->
+
+
+                <!-- TITEL -->
+                <label for="titel">titel<span>(verplicht)</span></label>
+                <input name="titel" id="titel" type="text" required>
+
+                <!-- BESCHRIJVING -->
+                <label for="beschrijving">Notitie</label>
+                <textarea id="beschrijving" name="beschrijving" placeholder="Vul hier jouw notitie in"
+                    required></textarea>
+
+                <label for="herinnering">herinnering<span>(verplicht)</span></label>
+                <input name="herinnering" id="herinnering" type="datetime-local" required>
+
+                <label for="datum">datum<span>(verplicht)</span></label>
+                <input name="datum" id="datum" type="datetime-local" required>
+
+                <button type="submit">Versturen</button>
+            </fieldset>
+        </form>
+
+        <% notities.forEach(notitie=> { %>
+
+            <article>
+                <h2>
+                    <%= notitie.titel %>
+                </h2>
+                <p>
+                    <%= notitie.datum %>
+                        <%= notitie.beschrijving %>
+                </p>
+            </article>
+
+            <% }) %>
