@@ -13,16 +13,17 @@
 </ul>
 
 <h3 id="#Opdracht"> 👨🏼‍💼 Opdracht</h3>
-Ontwerp en ontwikkel een server-side website voor een opdrachtgever.
+Ontwerp en maak voor een opdrachtgever een interactieve toepassing die voor iedereen toegankelijk is.
 
 <h3 id="#Designchallenge"> 🚀 Design challenge</h3>
-Omdat ik nog niet bekend ben met Node, Express en JSON is het voor mij een hele uitdaging om een de producten te laden uit de database. Ik heb mij daarom gefocust op het linken met de database en iets minder op de vormgeving. 
+Omdat ik nog niet bekend ben met Node, Express en JSON is het voor mij een hele uitdaging een interatieve toepassing te ontwerpen waarbij gebruikers iets op de ebsite kunnen achterlaten. Ook het begrijpen van de code is voor mij een uitdaging. 
         
 <h3 id="#Gebruik"> 👩🏽‍💻 Gebruik website</h3>
-Je begint bij de homepage van Vini Mini. Als je dan vervolgens op 'producten' klikt, krijg je een overzichtspagina van de producten die Vini Mini verkoopt.         
+Je begint bij de homepage van Vini Mini. Als je dan vervolgens op 'producten' klikt, krijg je een overzichtspagina van de producten die Vini Mini verkoopt.
+Als je vervolgens op een product klikt krijg je een deatilpagina van het project te zien. Ook kan je inloggen als je rechtsboven op de user icon klikt, je komt in een inlogomgeving en wordt na het inloggen doorgestuurd naar jouw persoonlijke omgeving en hier kan je bij notities een bericht achterlaten. 
 
 <h3 id="#Checklist"> ✅ Checklist</h3>
-Het is mij nog niet gelukt om voor elkaar te krijgen dat als je op een product klikt, je naar de detailpagina van dat product gaat. Hier ga ik nog mee aan de slag. 
+Ik heb nog geen tijd gehad om de detailpagina te stijlen. 
         
 <h3 id="#Kenmerken"> 📱 Kenmerken</h3>
 Dit project is gemaakt met Node, Express, EJS. 
@@ -34,6 +35,10 @@ Express is een framework voor Node.js waarmee ontwikkelaars gemakkelijk web-appl
 <br>
 <li> Wat is EJS:<br>
 EJS is een sjabloontaal waarmee ontwikkelaars dynamische HTML-pagina's kunnen maken in Node.js-applicaties. Het wordt gebruikt om variabelen, conditionele logica en herbruikbare componenten in HTML-pagina's in te voegen, waardoor het bouwen van webpagina's eenvoudiger en efficiënter wordt.</li>
+<br>
+<li> Wat is Progressive Enhancement:<br>
+Progressive enhancement is een website of webapplicatie die eerst vanuit een basisversie ontwikkeld is, zodat deze website volledig werkt voor bezoekers met bijvoorbeeld verouderde browsers, afwijkende apparaten of met een trage verbinding. De website blijf overeind als de Javascript bijvoorbeeld is uitgeschakeld. Je kan het zien als 3 stappen: eerst een goede basis in HTML, dan de styling en vervolgens client-side Javascript.  
+
 
 <h4>Tools</h4>
 <ul>
@@ -46,6 +51,7 @@ EJS is een sjabloontaal waarmee ontwikkelaars dynamische HTML-pagina's kunnen ma
         <li>🎨 CSS</li>
         <li>🕹️ JavaScript</li>
         <li>🥜 Node </li>
+        <li>🔛 Progressive Enhancement </li>
   </ul>      
 
 
