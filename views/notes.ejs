@@ -2,54 +2,53 @@
 
     <%- include('./partials/nav2.ejs') %>
 
-        <h3>Notities</h3>
-
-
-
-        <!-- <article class="">
-            <div class="note-data">
-                <i class="ri-add-line plus"></i>
-                <h2>Maak een notitie</h2>
-                <a href="/notities/new"></a>
-            </div>
-        </article> -->
-
         <form action="/newnote" method="post">
             <fieldset>
                 <legend>notities</legend>
 
-                <!-- notitietest -->
-
-
                 <!-- TITEL -->
-                <label for="titel">titel<span>(verplicht)</span></label>
+                <label for="titel">titel</label>
                 <input name="titel" id="titel" type="text" required>
 
-                <!-- BESCHRIJVING -->
+                <!-- Notitie -->
                 <label for="beschrijving">Notitie</label>
                 <textarea id="beschrijving" name="beschrijving" placeholder="Vul hier jouw notitie in"
                     required></textarea>
 
-                <label for="herinnering">herinnering<span>(verplicht)</span></label>
-                <input name="herinnering" id="herinnering" type="datetime-local" required>
-
-                <label for="datum">datum<span>(verplicht)</span></label>
+                <!-- Beschrijving -->
+                <label for="datum">datum</label>
                 <input name="datum" id="datum" type="datetime-local" required>
 
                 <button type="submit">Versturen</button>
             </fieldset>
         </form>
 
-        <% notities.forEach(notitie=> { %>
+
+
+
+        <div class="article-container">
 
             <article>
-                <h2>
-                    <%= notitie.titel %>
-                </h2>
-                <p>
-                    <%= notitie.datum %>
-                        <%= notitie.beschrijving %>
-                </p>
+                <div class="note-container">
+                    <button class="plus"><i class="ri-add-line plus-icon"></i></button>
+                    <h2 class="note-add">Nieuwe notitie</h2>
+                </div>
             </article>
 
-            <% }) %>
+            <% notities.forEach(notitie=> { %>
+
+                <article>
+                    <h2 class="note-title">
+                        <%= notitie.titel %>
+                    </h2>
+                    <p class="note-description">
+                        <%= notitie.beschrijving %>
+                    </p>
+
+                    <p class="note-date">
+                        <%= notitie.datum %>
+                    </p>
+                </article>
+
+                <% }) %>
+        </div>

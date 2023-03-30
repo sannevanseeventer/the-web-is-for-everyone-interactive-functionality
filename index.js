@@ -2,7 +2,6 @@ import express from 'express'
 
 // url vini mini database
 const url = 'https://api.vinimini.fdnd.nl/api/v1'
-const urlPost = "https://api.vinimini.fdnd.nl/api/v1/notities"; // Post URL 
 
 // Maak een nieuwe express app
 const app = express()
@@ -74,8 +73,9 @@ app.get('/todo', (request, response) => {
   response.render('todo')
 })
 
-// linkt de pagina 'to do' en haalt informatie op
+// linkt de pagina 'notes' en haalt informatie op
 app.get('/notes', (request, response) => {
+  let orderBy = request.query.orderBy || 'titel' // sorteren op titel
   const baseUrl = "https://api.vinimini.fdnd.nl/api/v1/"
   const pepijnId = "notities?id=clemozv3c3eod0bunahh71sx7"
   const url = `${baseUrl}${pepijnId}`
@@ -84,37 +84,23 @@ app.get('/notes', (request, response) => {
     response.render('notes', data)
   })
 
-
-
 })
 
-// Maak een route voor de index
-app.get('/', (request, response) => {
-  const baseUrl = "https://api.vinimini.fdnd.nl/api/v1/"
-  const pepijnId = "notities?id=clemozv3c3eod0bunahh71sx7"
-  const url = `${baseUrl}${pepijnId}`
-
-  fetchJson(url).then((data) => {
-    response.render('index', data)
-  })
-})
-
-app.post('/newnote', function (req, res, next) {
+app.post('/newnote', function (request, response) {
   const baseurl = "https://api.vinimini.fdnd.nl/api/v1/"
   const url = `${baseurl}`
-  req.body.afgerond = false
-  req.body.persoonId = 'clemozv3c3eod0bunahh71sx7'
-  req.body.datum = req.body.datum + ':00Z';
-  req.body.herinnering = [req.body.herinnering + ':00Z']
-  console.log(req.body)
-  postJson(url + '/notities', req.body).then((data) => {
+  request.body.afgerond = false
+  request.body.persoonId = 'clemozv3c3eod0bunahh71sx7'
+  request.body.datum = request.body.datum + ':00Z';
+  request.body.herinnering = [request.body.herinnering + ':00Z']
+  console.log(request.body)
+  postJson(url + '/notities', request.body).then((data) => {
     console.log(JSON.stringify(data))
-    let newNotitie = { ... req.body }
+    let newNotitie = { ... request.body }
 
     if (data.success) {
-      res.redirect('/notes') 
-      // TODO: squad meegeven, message meegeven
-      // TODO: Toast meegeven aan de homepagina
+      response.redirect('/notes') 
+
     } else {
       console.log("Post error")
     }
