@@ -55,6 +55,3 @@ const showHiddenPass = (loginPass, loginEye) =>{
 showHiddenPass('login-pass', 'login-eye')
 
 /* JS ENABLED */
-window.onload = function() {
-    document.getElementById("nav-container").style.display = "block";
-  };

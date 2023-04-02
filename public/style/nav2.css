@@ -3,7 +3,7 @@
 
 /*========== VARIABLES CSS ==========*/
 :root {
-    --header-height: 4rem;
+    --header-height: 3rem;
     --nav-width: 219px;
 
     /*========== Colors ==========*/
@@ -49,8 +49,7 @@
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
-    padding: 1rem 1rem 0;
+    padding: 2rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -69,6 +68,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+/*  TEST */
 
 /*========== HEADER ==========*/
 .header {
@@ -135,6 +137,12 @@ img {
     padding-left: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 /*========== NAV ==========*/
@@ -328,16 +336,120 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    border: 1px solid var(--green);
     background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: none;
+    width: 20rem;
+    height: 23rem;
+    margin: 5rem auto;
 }
+
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    padding: 1rem;
+}
+
+
+dialog {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #152a4266;
+}
+
+.form button#show {
+    position: relative;
+    border-radius: 50%;
+    padding: 2rem;
+    color: var(--first-color);
+    border: 1px dashed var(--first-color);
+    cursor: pointer;
+}
+
+.form button#exit {
+    background-color: white;
+    border: 1.5px solid var(--first-color);
+    border-radius: 10px;
+    color: var(--first-color);
+    width: 80px;
+    height: 30px;
+}
+
+.form button#show:hover {
+    background-color: #1abc9c;
+}
+
+.form button#exit:hover {
+    background-color: #e74c3c;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--first-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0em;
+}
+
+input#titel {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input#beschrijving {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input#datum {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    padding-bottom: 0.8rem;
+}
+
+
+.note-button {
+    border: 1.5px solid var(--first-color);
+    border-radius: 20px;
+    color: var(--first-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+/* TODO */
+
 
 
 /* ========== MEDIA QUERIES ==========*/
 
 @media screen and (min-width: 768px) {
     body {
-        padding: 1rem 3rem 0 6rem;
+        padding-left: 17rem;
     }
 
     .header {
@@ -370,8 +482,8 @@ fieldset {
     .nav {
         left: 0;
         padding: 1.2rem 1.5rem 0;
-        width: 68px;
-        /* Reduced navbar */
+        width: 219px;
+        height: 100%;
     }
 
     .nav__items {
@@ -387,8 +499,7 @@ fieldset {
     .nav__name,
     .nav__subtitle,
     .nav__dropdown-icon {
-        opacity: 0;
-        transition: .3s;
+        opacity: 1;
     }
 
 
@@ -397,20 +508,49 @@ fieldset {
         width: var(--nav-width);
     }
 
-    /* Visible elements */
-    .nav:hover .nav__logo-name {
-        opacity: 1;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .article-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap: 1rem;
     }
 
-    .nav:hover .nav__subtitle {
-        opacity: 1;
+    article {
+        width: 20em;
+        min-height: 20em;
+        background-color: white;
+        box-shadow: 2px 2px 2px rgba(174, 190, 205, .3);
+        border-radius: 20px;
+        padding: 0.5em;
     }
 
-    .nav:hover .nav__name {
-        opacity: 1;
+    .user-data {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
     }
 
-    .nav:hover .nav__dropdown-icon {
-        opacity: 1;
+    .user-name {
+        font-size: 1.1rem;
+        color: var(--darkblue);
+        font-weight: 600;
+    }
+
+    .logo {
+        width: 5em;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        width: 25rem;
+        height: 25rem;
+        margin: 5rem auto;
     }
 }

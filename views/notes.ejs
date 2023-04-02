@@ -2,26 +2,31 @@
 
     <%- include('./partials/nav2.ejs') %>
 
-        <form action="/newnote" method="post">
-            <fieldset>
-                <legend>notities</legend>
+        <div class="wrapper">
+            <div class="form">
+                <dialog id="window">
+                    <form action="/newnote" method="post">
+                        <fieldset>
+                            <!-- TITEL -->
+                            <label for="titel">Titel</label>
+                            <input name="titel" id="titel" type="text" placeholder="Titel notitie" required>
 
-                <!-- TITEL -->
-                <label for="titel">titel</label>
-                <input name="titel" id="titel" type="text" required>
+                            <!-- Notitie -->
+                            <label for="beschrijving">Notitie</label>
+                            <input type="text" id="beschrijving" name="beschrijving"
+                                placeholder="Typ hier jouw notitie in" required>
 
-                <!-- Notitie -->
-                <label for="beschrijving">Notitie</label>
-                <textarea id="beschrijving" name="beschrijving" placeholder="Vul hier jouw notitie in"
-                    required></textarea>
+                            <!-- Beschrijving -->
+                            <label for="datum">Datum</label>
+                            <input name="datum" id="datum" type="date" placeholder="datum" required>
 
-                <!-- Beschrijving -->
-                <label for="datum">datum</label>
-                <input name="datum" id="datum" type="datetime-local" required>
-
-                <button type="submit">Versturen</button>
-            </fieldset>
-        </form>
+                            <button class="note-button" type="submit">Versturen</button>
+                        </fieldset>
+                    </form>
+                    <button id="exit">Terug</button>
+                </dialog>
+            </div>
+        </div>
 
 
 
@@ -30,7 +35,7 @@
 
             <article>
                 <div class="note-container">
-                    <button class="plus"><i class="ri-add-line plus-icon"></i></button>
+                    <button id="show" class="plus"><i class="ri-add-line plus-icon"></i></button>
                     <h2 class="note-add">Nieuwe notitie</h2>
                 </div>
             </article>
