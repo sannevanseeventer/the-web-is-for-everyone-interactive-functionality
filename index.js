@@ -92,7 +92,7 @@ app.post('/newnote', function (request, response) {
   request.body.afgerond = false
   request.body.persoonId = 'clemozv3c3eod0bunahh71sx7'
   request.body.datum = request.body.datum + ':00Z';
-  request.body.herinnering = [request.body.herinnering + ':00Z']
+  request.body.herinnering = ['2023-01-01T01:01:00Z'];
   console.log(request.body)
   postJson(url + '/notities', request.body).then((data) => {
     console.log(JSON.stringify(data))
@@ -107,20 +107,6 @@ app.post('/newnote', function (request, response) {
   })
 })
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Stel het poortnummer in waar express op gaat luisteren
 app.set("port", process.env.PORT || 2000);
 
