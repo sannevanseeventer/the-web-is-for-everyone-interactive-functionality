@@ -2,6 +2,8 @@
 
     <%- include('./partials/nav2.ejs') %>
 
+
+
         <div class="wrapper">
             <div class="form">
                 <dialog id="window">
@@ -30,8 +32,28 @@
             </div>
         </div>
 
+        <noscript>
+            <form action="/newnote" method="post">
+                <fieldset id="fieldset2">
+                    <!-- TITEL -->
+                    <label for="titel">Titel</label>
+                    <input name="titel" id="titel" type="text" placeholder="Titel notitie" required>
+
+                    <!-- Notitie -->
+                    <label for="beschrijving">Notitie</label>
+                    <input type="text" id="beschrijving" name="beschrijving" placeholder="Typ hier jouw notitie in"
+                        required>
+
+                    <!-- Beschrijving -->
+                    <label for="datum">Datum</label>
+                    <input name="datum" id="datum" type="datetime-local" placeholder="datum" required>
 
 
+
+                    <button class="note-button" type="submit">Versturen</button>
+                </fieldset>
+            </form>
+        </noscript>
 
         <div class="article-container">
 
