@@ -36,4 +36,4 @@ linkColor.forEach(l => l.addEventListener('click', colorLink))
 
 
  /* ======= JS DISABLED ======= */
-
+ document.getElementById("header").style.display = "block"

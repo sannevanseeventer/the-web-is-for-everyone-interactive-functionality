@@ -82,6 +82,7 @@ img {
     box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
     padding: 0 1rem;
     z-index: var(--z-fixed);
+    display: none;
 }
 
 .header__container {
@@ -145,6 +146,54 @@ img {
     gap: 1rem;
 }
 
+/* HEADER NO JS */
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-color);
+    box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+    padding: 0 1rem;
+    z-index: var(--z-fixed);
+}
+
+.header-no-js {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.nav-no-js {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo3 {
+    width: 3em;
+}
+
+.nav3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding-left: 0;
+    max-width: 12rem;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav-link3 {
+    color: var(--darkblue);
+}
+
 /*========== NAV ==========*/
 .nav {
     position: fixed;
@@ -180,8 +229,9 @@ img {
 }
 
 .logo {
-    width: 3em;
+    width: 4em;
     height: auto;
+    margin: 0 auto;
 }
 
 .nav__list,
@@ -359,7 +409,7 @@ fieldset {
     border: none;
     width: 20rem;
     height: 23rem;
-    margin: 2rem auto;
+    margin: 4rem auto 0 auto;
 }
 
 /* ========================*/
@@ -473,7 +523,7 @@ input {
 
 @media screen and (min-width: 768px) {
     body {
-        padding-left: 17rem;
+        padding-left: 14rem;
     }
 
     .header {
@@ -482,11 +532,6 @@ input {
 
     .header__container {
         height: calc(var(--header-height) + .5rem);
-    }
-
-    .header__search {
-        width: 300px;
-        padding: .55rem .75rem;
     }
 
     .header__toggle {
@@ -537,6 +582,14 @@ input {
 
 @media screen and (min-width: 1024px) {
 
+    .header2 {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
     .article-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -551,10 +604,13 @@ input {
         box-shadow: 2px 2px 2px rgba(174, 190, 205, .3);
         border-radius: 20px;
         padding: 0.5em;
+        justify-self: center;
+
     }
 
     .user-data {
         display: flex;
+        margin-left: 35.6rem;
         align-items: center;
         gap: 1rem;
 
@@ -564,6 +620,7 @@ input {
         font-size: 1.1rem;
         color: var(--darkblue);
         font-weight: 600;
+        margin-left: 35.6rem;
     }
 
     .logo {
@@ -576,5 +633,9 @@ input {
         width: 25rem;
         height: 25rem;
         margin: 5rem auto;
+    }
+
+    #fieldset2 {
+        height: 25rem;
     }
 }
