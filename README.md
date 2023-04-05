@@ -1,7 +1,8 @@
 <h2>Overzichtspagina Vini Mini </h2>
 
 
-![mutest](https://user-images.githubusercontent.com/112857444/225724261-a1bbfe11-4a67-401c-8ad1-dcfd07172c8f.png)
+![mockupvm](https://user-images.githubusercontent.com/112857444/230045478-6a9fcd8d-5bc5-4fb0-a910-b92b33da5cc6.png)
+
 
 <h3>📚Inhoudsopgave</h3>
 <ul>
@@ -16,14 +17,14 @@
 Ontwerp en maak voor een opdrachtgever een interactieve toepassing die voor iedereen toegankelijk is.
 
 <h3 id="#Designchallenge"> 🚀 Design challenge</h3>
-Omdat ik nog niet bekend ben met Node, Express en JSON is het voor mij een hele uitdaging een interatieve toepassing te ontwerpen waarbij gebruikers iets op de ebsite kunnen achterlaten. Ook het begrijpen van de code is voor mij een uitdaging. 
+Omdat ik nog niet bekend ben met Node, Express en JSON is het voor mij een hele uitdaging een interatieve toepassing te ontwerpen waarbij gebruikers iets op de website kunnen achterlaten. Ook het begrijpen van de code is voor mij een uitdaging. 
         
 <h3 id="#Gebruik"> 👩🏽‍💻 Gebruik website</h3>
 Je begint bij de homepage van Vini Mini. Als je dan vervolgens op 'producten' klikt, krijg je een overzichtspagina van de producten die Vini Mini verkoopt.
 Als je vervolgens op een product klikt krijg je een deatilpagina van het project te zien. Ook kan je inloggen als je rechtsboven op de user icon klikt, je komt in een inlogomgeving en wordt na het inloggen doorgestuurd naar jouw persoonlijke omgeving en hier kan je bij notities een bericht achterlaten. 
 
 <h3 id="#Checklist"> ✅ Checklist</h3>
-Ik heb nog geen tijd gehad om de detailpagina te stijlen. 
+Ik had graag een tweede user story gedaan, maar hier ben ik helaas niet aan toegekomen. Alle overige pagina's in de persoonlijke omgeving moeten nog gebouwd worden.  
         
 <h3 id="#Kenmerken"> 📱 Kenmerken</h3>
 Dit project is gemaakt met Node, Express, EJS. 
