@@ -1,8 +1,5 @@
 <h2>Overzichtspagina Vini Mini </h2>
 
-![pf-s73-eve-set-14-mockup](https://user-images.githubusercontent.com/112857444/230213646-6d23bbe9-79b7-4956-9974-bcf5f4d799c6.png)
-
-
 ![mockupvm](https://user-images.githubusercontent.com/112857444/230045478-6a9fcd8d-5bc5-4fb0-a910-b92b33da5cc6.png)
 
 
