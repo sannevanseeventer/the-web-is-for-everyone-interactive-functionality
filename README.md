@@ -39,6 +39,8 @@ EJS is een sjabloontaal waarmee ontwikkelaars dynamische HTML-pagina's kunnen ma
 <li> Wat is Progressive Enhancement:<br>
 Progressive enhancement is een website of webapplicatie die eerst vanuit een basisversie ontwikkeld is, zodat deze website volledig werkt voor bezoekers met bijvoorbeeld verouderde browsers, afwijkende apparaten of met een trage verbinding. De website blijf overeind als de Javascript bijvoorbeeld is uitgeschakeld. Je kan het zien als 3 stappen: eerst een goede basis in HTML, dan de styling en vervolgens client-side Javascript.  
 
+Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pagina's altijd te bezoeken zijn. 
+
 
 <h4>Tools</h4>
 <ul>
