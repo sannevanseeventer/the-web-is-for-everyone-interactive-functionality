@@ -339,30 +339,53 @@ li {
 }
 
 article {
+    display: grid;
     width: 11em;
     min-height: 11em;
     background-color: white;
     box-shadow: 2px 2px 2px rgba(174, 190, 205, .3);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0.5em;
     justify-self: center;
 }
 
 .note-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--first-color);
     font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+.note-description {
+    font-size: 0.9em;
+    color: var(--darkblue);
+    margin-top: 0;
+    margin-left: 0.5rem;
 }
 
 .note-date {
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: grey;
+
+}
+
+.icons-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    color: rgb(186, 186, 186);
+    align-self: flex-end;
 }
 
 .note-add {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: var(--first-color);
-    margin-top: 0.1em
+    margin-top: 0.1em;
+    font-weight: 600;
 }
 
 .note-container {
@@ -395,7 +418,7 @@ fieldset {
     padding: 1.5rem;
     border: none;
     width: 20rem;
-    height: 23rem;
+    height: 30rem;
     margin: 5rem auto;
 }
 
@@ -408,7 +431,7 @@ fieldset {
     border-radius: 10px;
     border: none;
     width: 20rem;
-    height: 23rem;
+    height: 30rem;
     margin: 4rem auto 0 auto;
 }
 
@@ -428,6 +451,13 @@ fieldset {
 }
 
 
+.title-newnote {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--first-color);
+}
+
 dialog {
     width: 100%;
     height: 100%;
@@ -444,29 +474,30 @@ dialog {
     cursor: pointer;
 }
 
-.form button#exit {
-    background-color: white;
-    border: 1.5px solid var(--first-color);
-    border-radius: 10px;
-    color: var(--first-color);
-    width: 80px;
-    height: 30px;
+button#exit {
+    position: absolute;
+    margin-top: 5.5em;
+    margin-left: 18rem;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border: none;
+    color: var(--darkblue);
 }
 
 .form button#show:hover {
-    background-color: #1abc9c;
+    background-color: var(--first-color);
 }
 
 .form button#exit:hover {
-    background-color: #e74c3c;
+    color: var(--first-color);
 }
 
 label {
     text-align: left;
     font-size: 1rem;
-    color: var(--first-color);
+    color: var(--darkblue);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 1rem;
     margin-bottom: 0em;
 }
@@ -501,13 +532,14 @@ input {
 
 .note-button {
     border: 1.5px solid var(--first-color);
-    border-radius: 20px;
+    border-radius: 50rem;
     color: var(--first-color);
     font-size: 0.9rem;
     text-transform: uppercase;
     background-color: white;
     font-weight: 600;
-    padding: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
 }
 
 .note-button:hover {
@@ -603,7 +635,7 @@ input {
         background-color: white;
         box-shadow: 2px 2px 2px rgba(174, 190, 205, .3);
         border-radius: 20px;
-        padding: 0.5em;
+        padding: 1em;
         justify-self: center;
 
     }
@@ -614,6 +646,10 @@ input {
         align-items: center;
         gap: 1rem;
 
+    }
+
+    button#exit {
+        margin-left: 52.5rem;
     }
 
     .user-name {
@@ -631,11 +667,46 @@ input {
 
     fieldset {
         width: 25rem;
-        height: 25rem;
+        min-height: 30rem;
         margin: 5rem auto;
     }
 
     #fieldset2 {
         height: 25rem;
+    }
+
+    .note-container {
+        margin: 4rem auto;
+    }
+
+    .plus {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .plus-icon {
+        font-size: 2em;
+    }
+
+
+    .note-title {
+        font-size: 1.3em;
+    }
+
+    .note-description {
+        font-size: 0.9em;
+    }
+
+    .note-date {
+        font-size: 0.7em;
+        color: grey;
+
+    }
+
+    .icons-note {
+        margin-right: 0.5rem;
+        color: rgb(186, 186, 186);
+        align-self: flex-end;
     }
 }

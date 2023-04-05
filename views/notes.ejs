@@ -7,8 +7,10 @@
         <div class="wrapper">
             <div class="form">
                 <dialog id="window">
+                    <button id="exit"><i class='bx bx-x'></i></button>
                     <form action="/newnote" method="post">
                         <fieldset>
+                            <h2 class="title-newnote"> Maak een nieuwe notitie</h2>
                             <!-- TITEL -->
                             <label for="titel">Titel</label>
                             <input name="titel" id="titel" type="text" placeholder="Titel notitie" required>
@@ -27,14 +29,15 @@
                             <button class="note-button" type="submit">Versturen</button>
                         </fieldset>
                     </form>
-                    <button id="exit">Terug</button>
                 </dialog>
             </div>
         </div>
 
+        <!-- =============== WHEN JS IS DISABLED =================== -->
         <noscript>
             <form action="/newnote" method="post">
                 <fieldset id="fieldset2">
+                    <h2 class="title-newnote"> Maak een nieuwe notitie</h2>
                     <!-- TITEL -->
                     <label for="titel">Titel</label>
                     <input name="titel" id="titel" type="text" placeholder="Titel notitie" required>
@@ -54,6 +57,7 @@
                 </fieldset>
             </form>
         </noscript>
+        <!-- ===================================================== -->
 
         <div class="article-container">
 
@@ -74,9 +78,12 @@
                         <%= notitie.beschrijving %>
                     </p>
 
-                    <p class="note-date">
-                        <%= notitie.datum %>
-                    </p>
+                    <div class="icons-note">
+                        <p class="note-date">
+                            <%= notitie.datum %>
+                        </p>
+                        <i class='bx bx-trash'></i>
+                    </div>
                 </article>
 
                 <% }) %>
