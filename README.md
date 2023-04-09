@@ -41,14 +41,6 @@ EJS is een sjabloontaal waarmee ontwikkelaars dynamische HTML-pagina's kunnen ma
 Progressive enhancement is een website of webapplicatie die eerst vanuit een basisversie ontwikkeld is, zodat deze website volledig werkt voor bezoekers met bijvoorbeeld verouderde browsers, afwijkende apparaten of met een trage verbinding. De website blijf overeind als de Javascript bijvoorbeeld is uitgeschakeld. Je kan het zien als 3 stappen: eerst een goede basis in HTML, dan de styling en vervolgens client-side Javascript.  
 
 Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pagina's altijd te bezoeken zijn. 
-
-<h3 id="#Installatie"> ⚙️ Installatie </h3>
-        <ul>
-<li>Clone of download deze repository naar de gewenste folder.</li>
-<li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
-<li>Gebruik npm install om de benodigde packages te downloaden voor dit project.</li>
-                <li>Start een server met npm start.</li>
-        </ul>
         
 <h4>Tools</h4>
 <ul>
@@ -62,7 +54,15 @@ Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pa
         <li>🕹️ JavaScript</li>
         <li>🥜 Node </li>
         <li>🔛 Progressive Enhancement </li>
-  </ul>      
+  </ul>   
+        
+        <h3 id="#Installatie"> ⚙️ Installatie </h3>
+        <ul>
+<li>Clone of download deze repository naar de gewenste folder.</li>
+<li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
+<li>Gebruik npm install om de benodigde packages te downloaden voor dit project.</li>
+                <li>Start een server met npm start.</li>
+        </ul>
 
 
 ## Licentie
