@@ -25,6 +25,14 @@ Als je vervolgens op een product klikt krijg je een deatilpagina van het project
 
 <h3 id="#Checklist"> ✅ Checklist</h3>
 Ik had graag een tweede user story gedaan, maar hier ben ik helaas niet aan toegekomen. Alle overige pagina's in de persoonlijke omgeving moeten nog gebouwd worden.  
+
+<h3 id="#Installatie"> ⚙️ Installatie </h3>
+        <ul>
+<li>Clone of download deze repository naar de gewenste folder.</li>
+<li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
+<li>Gebruik npm install om de benodigde packages te downloaden voor dit project.</li>
+                <li>Start een server met npm start.</li>
+        </ul>
         
 <h3 id="#Kenmerken"> 📱 Kenmerken</h3>
 Dit project is gemaakt met Node, Express, EJS. 
@@ -55,14 +63,7 @@ Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pa
         <li>🥜 Node </li>
         <li>🔛 Progressive Enhancement </li>
   </ul>   
-        
-        <h3 id="#Installatie"> ⚙️ Installatie </h3>
-        <ul>
-<li>Clone of download deze repository naar de gewenste folder.</li>
-<li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
-<li>Gebruik npm install om de benodigde packages te downloaden voor dit project.</li>
-                <li>Start een server met npm start.</li>
-        </ul>
+ 
 
 
 ## Licentie
