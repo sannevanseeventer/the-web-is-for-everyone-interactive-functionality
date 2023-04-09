@@ -45,8 +45,8 @@ Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pa
         <ul>
 <li>Clone of download deze repository naar de gewenste folder.</li>
 <li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
-<li>Gebruik ```npm install``` om de benodigde packages te downloaden voor dit project.</li>
-                <li>Start een server met ```npm start```.</li>
+<li>Gebruik ```js npm install``` om de benodigde packages te downloaden voor dit project.</li>
+                <li>Start een server met ```js npm start```.</li>
         </ul>
         
 <h4>Tools</h4>
