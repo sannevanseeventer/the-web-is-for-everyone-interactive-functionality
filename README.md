@@ -41,6 +41,11 @@ Progressive enhancement is een website of webapplicatie die eerst vanuit een bas
 
 Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pagina's altijd te bezoeken zijn. 
 
+<h3> ⚙️ Installatie </h3>
+Clone of download deze repository naar de gewenste folder.
+Open de root directory van dit project en open het project in een code editor naar keuze.
+Gebruik npm install om de benodigde packages te downloaden voor dit project.
+Start een server met npm run start.
 
 <h4>Tools</h4>
 <ul>
