@@ -1,6 +1,7 @@
 <h2>Login en Persoonlijke omgeving Vini Mini </h2>
 
-![jjjj](https://user-images.githubusercontent.com/112857444/230792582-b59e5419-9e49-423d-bbd3-9a351194d438.png)
+![jjjj](https://user-images.githubusercontent.com/112857444/230792626-bd82060d-e459-44ea-b32b-6613b4ea8768.png)
+
 
 
 
