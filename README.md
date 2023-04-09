@@ -10,6 +10,7 @@
 <li><a href="#Gebruik"> 👩🏽‍💻 Gebruik website</a></li>  
 <li><a href="#Checklist"> ✅ Checklist</a></li> 
 <li><a href="#Kenmerken"> 📱 Kenmerken</a></li> 
+<li><a href="#Installatie"> ⚙️ Installatie</a></li> 
 </ul>
 
 <h3 id="#Opdracht"> 👨🏼‍💼 Opdracht</h3>
@@ -41,7 +42,7 @@ Progressive enhancement is een website of webapplicatie die eerst vanuit een bas
 
 Ik heb Progressive Enhancement voornamelijk toegepast in de menu's zodat alle pagina's altijd te bezoeken zijn. 
 
-<h3> ⚙️ Installatie </h3>
+<h3 id="#Installatie"> ⚙️ Installatie </h3>
         <ul>
 <li>Clone of download deze repository naar de gewenste folder.</li>
 <li>Open de root directory van dit project en open het project in een code editor naar keuze.</li>
