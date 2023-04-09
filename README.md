@@ -1,6 +1,7 @@
 <h2>Login en Persoonlijke omgeving Vini Mini </h2>
 
-![mockupvm](https://user-images.githubusercontent.com/112857444/230045478-6a9fcd8d-5bc5-4fb0-a910-b92b33da5cc6.png)
+![jjjj](https://user-images.githubusercontent.com/112857444/230792551-7f151beb-092d-4fab-ac72-6ed34b8380ff.png)
+
 
 
 <h3>📚Inhoudsopgave</h3>
